@@ -11,6 +11,10 @@ This is based on this excellant article: [Python Best Practices for a New Projec
 
 # Installation
 
+```bash
+⚠️ Warning: Poetry must be installed.
+```
+
 ## `go install`
 
 If you have go installed, simply run:
