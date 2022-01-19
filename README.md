@@ -2,13 +2,13 @@
 
 Easily kickstart your Python project with very opionionated best practices.\
 
-  [x] Manage your project using poetry <https://python-poetry.org/>\
-  [x] Add testing with pytest and pytest-cov\
-  [x] Run checks before commiting using pre-commit\
-  [x] Code analysis and formatting with Flake8, Mypy, Isort and Black\
+  - [x] Manage your project using poetry <https://python-poetry.org/>\
+  - [x] Add testing with pytest and pytest-cov\
+  - [x] Run checks before commiting using pre-commit\
+  - [x] Code analysis and formatting with Flake8, Mypy, Isort and Black\
 
 This is based on this excellant article:\
-[Python Best Practices for a New Project](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
+[Python Best Practices for a New Project](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)\
 and some of my own experiance.
 
 # Installation
@@ -16,7 +16,7 @@ and some of my own experiance.
 ## `go install`
 
 If you have go installed, simply run:\
-    `go install github.com/luciferchase/pyproject`
+    ```go install github.com/luciferchase/pyproject```
 
 ## Binaries
 
@@ -26,7 +26,7 @@ You have to manually add the `pyproject.exe` file to your path.
 ## Build from source
 
 `git clone` this repository and run:\
-    `go build -o bin\pyproject.exe main.go`\
+    ```go build -o bin\pyproject.exe main.go```\
 You have to manually add the `pyproject.exe` [availabe in the `.\bin` dir] to your path.
 
 # Why?
