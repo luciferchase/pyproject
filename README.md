@@ -13,7 +13,7 @@ This is based on this excellant article: [Python Best Practices for a New Projec
 
 ## `go install`
 
-If you have go installed, simply run:\
+If you have go installed, simply run:
 ```bash
 go install github.com/luciferchase/pyproject
 ```
@@ -25,7 +25,7 @@ You have to manually add the `pyproject.exe` file to your path.
 
 ## Build from source
 
-`git clone` this repository and run:\
+`git clone` this repository and run:
 ```bash
 go build -o bin\pyproject.exe main.go
 ```
