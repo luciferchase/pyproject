@@ -87,7 +87,7 @@ func Run(name string) error {
 		return errors.New("⚠ git commit failed: " +
 			"can be caused by pre-commit hook" +
 			"try committing manually",
-		)
+		)	
 	}
 	log.Println("✅ initial commit created successfully")
 	return nil
