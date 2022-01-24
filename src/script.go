@@ -84,10 +84,13 @@ func Run(name string) error {
 	cmd = exec.Command("git", "commit", "-m", "🚀 initial commit")
 	cmd.Dir = path.Join(".", name)
 	if err := cmd.Run(); err != nil {
-		return errors.New("⚠ git commit failed: " +
-			"can be caused by pre-commit hook" +
-			"try committing manually",
-		)	
+		// Try again
+		if err := cmd.Run(); err != nil {
+			return errors.New("⚠ git commit failed: " +
+				"can be caused by pre-commit hook " +
+				"try committing manually",
+			)
+		}
 	}
 	log.Println("✅ initial commit created successfully")
 	return nil
